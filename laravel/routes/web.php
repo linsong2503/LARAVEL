@@ -20,7 +20,7 @@ Route::prefix('product')->group(function () {
     })->where('id', '.*')->name('product.detail');
 });
 
-Route::get('/sinhvien/{name?}/{mssv?}', function ($name = 'Nguyen Tho Le Hoang', $mssv = '0031167') {
+Route::get('/sinhvien/{name?}/{mssv?}', function ($name = 'Dao Tung Lam', $mssv = '0157767') {
     return "Thông tin giới thiệu của sinh viên làm bài: $name, MSSV: $mssv";
 });
 
